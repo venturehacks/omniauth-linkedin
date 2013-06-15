@@ -3,7 +3,7 @@ require 'omniauth/strategies/oauth'
 module OmniAuth
   module Strategies
     class LinkedIn < OmniAuth::Strategies::OAuth
-      option :name, "linkedin"
+      option :name, "linked_in"
 
       option :client_options, {
         :site => 'https://api.linkedin.com',
@@ -82,6 +82,3 @@ module OmniAuth
     end
   end
 end
-
-OmniAuth.config.add_camelization 'linkedin', 'LinkedIn'
-
